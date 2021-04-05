@@ -13,6 +13,7 @@ describe('workspace-project App', () => {
     expect(page.getTitleText()).toEqual('hr-assistant-fe-app app is running!');
   });
 
+  // @ts-ignore
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
